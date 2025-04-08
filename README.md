@@ -1,54 +1,38 @@
-# React + TypeScript + Vite
+# 🎙️ Rocket.Chat with Audio Transcription and Translation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a full-stack React-based chat interface that supports:
+- 🔊 **Voice message recording and uploading**
+- 🧠 **AI-based transcription** using Groq + Whisper
+- 💬 **Chat with AI** (via `/chat` command using LLaMA model)
+- 🌐 **Multilingual translation** with Google Translate
+- ✨ Beautiful and intuitive UI
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🎤 Record and send audio messages directly in the chat
+- 📎 Upload audio files from your device
+- 📝 Transcribe audio to text using `Whisper-Large-v3` model
+- 🌍 Translate text into multiple languages using Google Translate widget
+- 🤖 Chat with an AI assistant using `/chat your message`
+- 🧠 Built with `React`, `TypeScript`, and Groq's APIs
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🛠️ Getting Started
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Prerequisites
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Node.js (v16 or higher)
+- npm or yarn
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+### Installation
+
+```bash
+git clone https://github.com/meenakshiiyer2531/Rocket.chat-demo
+cd Rocket.chat-demo
+npm install
+# or
+yarn install
+npm run dev 

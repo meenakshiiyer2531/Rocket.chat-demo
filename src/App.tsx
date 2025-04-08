@@ -63,7 +63,7 @@ const App = () => {
       const response = await fetch("https://api.groq.com/openai/v1/audio/transcriptions", {
         method: "POST",
         headers: {
-          Authorization: `Bearer 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`,
+          Authorization: `Bearer GROQ API KEY`,
         },
         body: formData,
       });
@@ -112,7 +112,7 @@ const App = () => {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
-            Authorization: `Bearer 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`,
+            Authorization: `Bearer GROQ API KEY`,
           },
           body: JSON.stringify({
             model: "meta-llama/llama-4-scout-17b-16e-instruct",
